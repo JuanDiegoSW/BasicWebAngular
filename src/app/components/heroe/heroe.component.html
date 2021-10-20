@@ -1,0 +1,29 @@
+<h1 class="animated fadeIn">{{ jugador.nombre | uppercase }}</h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+  <div class="col-md-4">
+
+    <img [src]="jugador.img" class="img-fluid" [alt]="jugador.nombre">
+    <br><br>
+    <a [routerLink]="['/jugadores']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+  </div>
+      <div class="col-md-4">
+        <h3>{{ jugador.nombre }}</h3>
+        <hr>
+        <h2><b>Posicion: </b>{{jugador.posicion}}</h2>
+        <h2><b>Año Debut: </b>{{jugador.anio}}</h2>
+        <h2><b>Equipo</b></h2>
+        <div>
+          <img *ngIf="jugador.equipo == 'Real Madrid'" class="img-logo" src="assets/img/real_icon.png" alt="Real Madrid">
+          <img *ngIf="jugador.equipo == 'Barcelona'" class="img-logo" src="assets/img/dc-logo.jpg" alt="Barceola">
+        </div>
+      
+      
+
+      </div>
+
+
+</div>

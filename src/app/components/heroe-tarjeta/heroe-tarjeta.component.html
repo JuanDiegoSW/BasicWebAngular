@@ -1,0 +1,15 @@
+<div class="card animated fadeIn fast mx-auto" style="max-width:800px;">
+  <img class="card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+  <div class="card">
+  <div class="card-body">
+    <h4 class="card-title ">{{ heroe.nombre }}</h4>
+
+    <button (click)="verJugador()"
+      type="button" class="btn btn-outline-primary btn-block">
+      Mas Info
+    </button>
+    <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link...</a> -->
+
+  </div>
+  </div>
+</div>
