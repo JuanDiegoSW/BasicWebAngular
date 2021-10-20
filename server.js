@@ -10,7 +10,7 @@ app.get('/',function(req,res){
 });*/
 app.get(express.static('./dist/my-first-project'));
 app.get('/*', (req,res) =>
-    res.sendFile('index.html', {root:'dist/my-first-project/'}),
+    res.sendFile('index.html', {root:'dist/my-first-project/src/'}),
 
 );
 app.listen(process.env.PORT||8080);
